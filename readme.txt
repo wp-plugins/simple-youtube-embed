@@ -23,7 +23,7 @@ Simple YouTube Embed plugin is the easiest way to embed YouTube videos on WordPr
 
 Create a new post/page and enter your YouTube video URL to embed it. For example:
 
-`http://www.youtube.com/watch?v=Vpg9yizPP_g`
+`-http://www.youtube.com/watch?v=Vpg9yizPP_g`
 
 For documentation please visit the [Simple YouTube Embed](http://noorsplugin.com/2014/07/17/simple-youtube-embed-plugin/) plugin page
 
