@@ -3,7 +3,7 @@ Contributors: naa986
 Donate link: http://noorsplugin.com/
 Tags: video, embed, youtube, embed videos, embed youtube, embedding youtube, fluid, html5, iPad, iphone, mobile, simple, simple youtube, video plugin, wordpress youtube embed, youtube embed, youtube player, youtube plugin, responsive, shortcode, wordpress, you tube, youtube player
 Requires at least: 3.0
-Tested up to: 3.9
+Tested up to: 4.0
 Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
