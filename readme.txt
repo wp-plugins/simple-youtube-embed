@@ -27,6 +27,11 @@ Create a new post/page and enter your YouTube video URL to embed it. For example
 
 For documentation please visit the [Simple YouTube Embed](http://noorsplugin.com/2014/07/17/simple-youtube-embed-plugin/) plugin page
 
+= Recommended Reading =
+
+* Simple YouTube Embed [Documentation](http://noorsplugin.com/2014/07/17/simple-youtube-embed-plugin/)
+* My Other [Free WordPress Plugins](http://noorsplugin.com/wordpress-plugins/)
+
 == Installation ==
 
 1. Go to the Add New plugins screen in your WordPress Dashboard
