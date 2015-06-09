@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Simple YouTube Embed
-Version: 1.0.1
+Version: 1.0.2
 Plugin URI: http://noorsplugin.com/2014/07/17/simple-youtube-embed-plugin/
 Author: naa986
 Author URI: http://noorsplugin.com/
@@ -13,7 +13,7 @@ if(!class_exists('SIMPLE_YOUTUBE_EMBED'))
 {
     class SIMPLE_YOUTUBE_EMBED
     {
-        var $plugin_version = '1.0.1';
+        var $plugin_version = '1.0.2';
         var $plugin_url;
         var $plugin_path;
         function __construct()
@@ -83,8 +83,29 @@ function simple_youtube_video_embed($html, $url, $attr)
     if(preg_match($yt_pattern,$url,$matches))
     {
         $youtube_id = $matches[1];
+        $image_url = 'http://img.youtube.com/vi/'.$youtube_id.'/maxresdefault.jpg';
+        $response = wp_remote_request($image_url);
+        $response_code = wp_remote_retrieve_response_code($response);
+        $videoid = ' data-pe-videoid="'.$youtube_id.'"'; 
+        $fitvids = ' data-pe-fitvids="true"';
+        $previewsize = '';
+        if($response_code=="404"){
+            $previewsize = ' data-pe-preview-size="high"';
+        }
+        $showrelated = ''; 
+        $showcontrols = '';
+        $parsed_url = parse_url($url); //parse the url to get query parameters
+        if(isset($parsed_url['query']) && !empty($parsed_url['query'])){
+            parse_str($parsed_url['query'], $data); //get query parameters into an array
+            if(isset($data['rel']) && $data['rel']=="0"){
+                $showrelated = ' data-pe-show-related="false"';
+            }
+            if(isset($data['controls']) && $data['controls']=="0"){
+                $showcontrols = ' data-pe-show-controls="false"';
+            }
+        }
         $embed_code = <<<EOT
-        <div class="pretty-embed" data-pe-videoid="$youtube_id" data-pe-fitvids="true"></div>  
+        <div class="pretty-embed"{$videoid}{$fitvids}{$previewsize}{$showrelated}{$showcontrols}></div>  
 EOT;
         $html = $embed_code;
     }

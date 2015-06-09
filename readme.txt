@@ -4,26 +4,41 @@ Donate link: http://noorsplugin.com/
 Tags: video, embed, youtube, embed videos, embed youtube, embedding youtube, fluid, html5, iPad, iphone, mobile, simple, simple youtube, video plugin, wordpress youtube embed, youtube embed, youtube player, youtube plugin, responsive, shortcode, wordpress, you tube, youtube player
 Requires at least: 3.0
 Tested up to: 4.2
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Embed YouTube video beautifully on your WordPress site
+Embed YouTube videos beautifully in WordPress
 
 == Description ==
 
-Simple YouTube Embed plugin is the easiest way to embed YouTube videos on WordPress. The plugin is very lightweight and easy to use.
+Simple YouTube Embed plugin is the easiest way to embed YouTube videos in WordPress. This plugin extends the default YouTube embed with advanced player parameters. When the page is rendered, a high resolution thumbnail image is displayed instead of the YouTube video player.
 
-= Feature =
+= Features =
 
 * Pretty YouTube video embed
-* Responsive and mobile friendly 
+* Responsive and mobile friendly
+* Embed a YouTube video with a high definition thumbnail image as the poster
+* Enable/Disable display of suggested videos when the video finishes
+* Enable/Disable player controls
 
 = Simple YouTube Embed Usage =
 
-Create a new post/page and enter your YouTube video URL to embed it. For example:
+Create a new post/page and enter your YouTube video URL to embed it. Make sure the URL is on its own line and not hyperlinked (clickable when viewing the post). In order to avoid formatting errors, It's better to place the URL into the content area in text mode. For example:
 
-`-http://www.youtube.com/watch?v=Vpg9yizPP_g`
+`http&#58;//www.youtube.com/watch?v=Vpg9yizPP_g`
+
+*Related videos*
+
+In order to disable related videos from showing you can add "rel=0" to a YouTube URL.
+
+`http&#58;//www.youtube.com/watch?v=Vpg9yizPP_g&rel=0`
+
+*Controls*
+
+If you do not want to show player controls you can add "controls=0" to a YouTube URL.
+
+`http&#58;//www.youtube.com/watch?v=Vpg9yizPP_g&controls=0`
 
 For documentation please visit the [Simple YouTube Embed](http://noorsplugin.com/2014/07/17/simple-youtube-embed-plugin/) plugin page
 
@@ -57,6 +72,12 @@ Yes.
 none
 
 == Changelog ==
+
+= 1.0.2 =
+* Fixed "black bars" that would show up on the sides of the video and thumbnail
+* If high definition is not available for a video it will embed with a low quality thumbnail
+* Added an option to disable related videos
+* Added an option to disable player controls
 
 = 1.0.1 =
 * First commit
