@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Simple YouTube Embed
-Version: 1.0.2
+Version: 1.0.3
 Plugin URI: http://noorsplugin.com/2014/07/17/simple-youtube-embed-plugin/
 Author: naa986
 Author URI: http://noorsplugin.com/
@@ -13,7 +13,7 @@ if(!class_exists('SIMPLE_YOUTUBE_EMBED'))
 {
     class SIMPLE_YOUTUBE_EMBED
     {
-        var $plugin_version = '1.0.2';
+        var $plugin_version = '1.0.3';
         var $plugin_url;
         var $plugin_path;
         function __construct()

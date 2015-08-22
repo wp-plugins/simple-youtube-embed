@@ -3,8 +3,8 @@ Contributors: naa986
 Donate link: http://noorsplugin.com/
 Tags: video, embed, youtube, embed videos, embed youtube, embedding youtube, fluid, html5, iPad, iphone, mobile, simple, simple youtube, video plugin, wordpress youtube embed, youtube embed, youtube player, youtube plugin, responsive, shortcode, wordpress, you tube, youtube player
 Requires at least: 3.0
-Tested up to: 4.2
-Stable tag: 1.0.2
+Tested up to: 4.3
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -72,6 +72,9 @@ Yes.
 none
 
 == Changelog ==
+
+= 1.0.3 =
+* Simple YouTube Embed is now compatible with WordPress 4.3
 
 = 1.0.2 =
 * Fixed "black bars" that would show up on the sides of the video and thumbnail
